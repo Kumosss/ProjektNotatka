@@ -1,12 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { Request } from 'express';
-
 @Injectable()
 export class AppService {
-  getHello(req: Request): { message: string; headers: any } {
+  getHello(): { message: string; } {
     return {
-      message: 'Hello World!!',
-      headers: req.headers
+      message: 'Hello World!!'
     };
   }
 }
