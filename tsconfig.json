@@ -10,7 +10,11 @@
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "esModuleInterop": true,
-    "target": "es2017",
+    "target": "es2015",
+    "types": [
+      "node",
+      "@types/node"
+    ],
     "typeRoots": [
         "node_modules/@types"
     ],

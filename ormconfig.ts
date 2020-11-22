@@ -1,3 +1,4 @@
+import { join } from 'path';
 import { ConnectionOptions } from 'typeorm';
 
 export const ormconfig: ConnectionOptions = {
@@ -8,4 +9,5 @@ export const ormconfig: ConnectionOptions = {
     password: process.env.TYPEORM_PASSWORD,
     database: process.env.TYPEORM_DATABASE,
     synchronize: Boolean(process.env.TYPEORM_SYNCHRONIZE),
+    entities: [join(__dirname, '**', '*.entity.js')]
 };
