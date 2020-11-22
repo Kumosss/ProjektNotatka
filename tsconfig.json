@@ -1,15 +1,38 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "node",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "target": "es2015",
+    "types": [
+      "node",
+      "@types/node"
+    ],
+    "typeRoots": [
+        "node_modules/@types"
+    ],
+    "lib": [
+        "es2018",
+        "dom"
+    ],
     "sourceMap": true,
-    "outDir": "./dist",
     "baseUrl": "./",
+    "outDir": "./dist",
     "incremental": true
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "dist"
+  ],
 }
