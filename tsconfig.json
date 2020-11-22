@@ -28,7 +28,8 @@
     "incremental": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "main/**/*"
   ],
   "exclude": [
     "node_modules",
